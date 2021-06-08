@@ -9,7 +9,7 @@ To test the pretrained MIMO-GAN on the 3DVA dataset, implement the following ste
 https://drive.google.com/file/d/1tkgxOfDFAKUzQq8OLaqOhOcnWrBwb4iL/view?usp=sharing
 3. Implement 'h5tomat.py' to generate the predicted 2D saliency for all meshes of the 3DVA dataset, which outputs 'mimogan.mat' required for running 'run_test.m' in MATLAB. Alternatively, you can directly download 'mimogan.mat' from https://drive.google.com/file/d/1E8zbGJMjsfPGyNKCIckimsCtFbiZXL8h/view?usp=sharing
 4. Create a folder called 'saliency'.
-5. Run 'run_test.m' in MATLAB. It will output the view-dependent mesh saliency maps in the 'saliency' folder and output the LCC and AUC scores.
+5. Run 'run_test.m' in MATLAB. Please make sure that all paths are set correctly. You may also want to take a look at the well commented 'sa_trans_eval.m'. It will output the view-dependent mesh saliency maps in the 'saliency' folder and output the LCC and AUC scores.
 
 To train the MIMO-GAN using SALICON and ModelNet40 datasets, implement the following steps:
 1. Download the SALICON dataset from the official webpage.
