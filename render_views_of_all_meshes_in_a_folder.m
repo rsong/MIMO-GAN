@@ -6,7 +6,7 @@ opts.range = [];            % if empty, all found shapes will be rendered, while
 
 opts = vl_argparse(opts, varargin);
 
-mesh_filenames = [rdir( sprintf('%s\\**\\*.obj', folder) ); rdir( sprintf('%s\\**\\**.off', folder) )];
+mesh_filenames = [rdir( sprintf('%s\\**\\*.obj', folder) ); rdir( sprintf('%s\\**\\*.off', folder) )];
 
 if isempty( opts.range )
     range = 1:length( mesh_filenames );
